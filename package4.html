@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/jamiilogo.png" type="image/x-icon">
+    <title>5 days 5 nights Maasai Mara - Lake Nakuru - Amboseli Safari package</title>
+    <style>
+        .truncate-lines {
+            display: -webkit-box;
+            -webkit-line-clamp: 3; /* Number of lines to show before truncating */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+    <script>
+        function toggleReadMore(postId) {
+            const postContent = document.getElementById(`post-content-${postId}`);
+            const fullContent = document.getElementById(`full-content-${postId}`);
+            const readMoreBtn = document.getElementById(`read-more-btn-${postId}`);
+
+            if (postContent.classList.contains('hidden')) {
+                postContent.classList.remove('hidden');
+                fullContent.classList.add('hidden');
+                readMoreBtn.textContent = 'Read less';
+            } else {
+                postContent.classList.add('hidden');
+                fullContent.classList.remove('hidden');
+                readMoreBtn.textContent = 'Read more';
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 " style="background: url(./images/travel.jpg);">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto">
+            <h1 class="text-2xl font-semibold flex justify-center">5 days 5 nights Maasai Mara - Lake Nakuru - Amboseli Safari package</h1>
+            <p class="flex justify-center">Your detail plan and guidance ticket.</p>
+        </div>
+    </header>
+    
+    <div class="container mx-auto mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Blog Post 1 -->
+            <div class="bg-white p-6 rounded shadow">
+                <h2 class="text-xl font-semibold mb-2">Day 1 Nairobi/Maasai Mara</h2>
+                <p class="text-gray-600 truncate-lines" id="post-content-1">
+                   Hotel pickup for a morning drive through Maasai Mara
+                </p>
+                <button id="read-more-btn-1" onclick="toggleReadMore(1)" class="text-blue-500 mt-4 inline-block">Read more</button>
+                <p class="text-gray-600 hidden" id="full-content-1">
+                    Afternoon lunch a sentrim luxury tented camp. Afternoon game drive 
+                    Dinner and Overnight at sentrim luxury tented camp
+                </p>
+            </div>
+            
+            <!-- Blog Post 2 -->
+            <div class="bg-white p-6 rounded shadow">
+                <h2 class="text-xl font-semibold mb-2">Day 2 Maasai Mara</h2>
+                <p class="text-gray-600 truncate-lines" id="post-content-2">
+                    Morning drive in Maasai Mara after morning breakfast
+                </p>
+                <button id="read-more-btn-2" onclick="toggleReadMore(2)" class="text-blue-500 mt-4 inline-block">Read more</button>
+                <p class="text-gray-600 hidden" id="full-content-2">
+                    Lunch at the lodge then an Afternoon game drive view of Sentrin luxury camp 
+                    Accomodation and dinner at Sentrin luxury  Camp
+                </p>
+            </div>
+
+            <div class="bg-white p-6 rounded shadow">
+                <h2 class="text-xl font-semibold mb-2">Day 3 Maasai Mara - Lake nakuru</h2>
+                <p class="text-gray-600 truncate-lines" id="post-content-3">
+                   Breakfast at the camp leave mara for Nakuru 
+                </p>
+                <button id="read-more-btn-3" onclick="toggleReadMore(3)" class="text-blue-500 mt-4 inline-block">Read more</button>
+                <p class="text-gray-600 hidden" id="full-content-3">
+                  Check in at Merica Hotel have lunch 
+                  Afternoon game drive to see the spectacular view Lake Nakuru has to offer
+                  Dinner and overnight at Merica hotel
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <h2 class="text-xl font-semibold mb-2">Day 4 Lake Naivasha - Amboseli </h2>
+                <p class="text-gray-600 truncate-lines" id="post-content-4">
+                    Morning medidation and breakfast at the lodge leave for Amboseli
+                </p>
+                <button id="read-more-btn-4" onclick="toggleReadMore(4)" class="text-blue-500 mt-4 inline-block">Read more</button>
+                <p class="text-gray-600 hidden" id="full-content-4">
+                    Check in at sentrin luxury tented camp  have lunch and rest 
+                    Afternoon game drive 
+                    Dinner and overnight at sentrim luxury tented camp
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <h2 class="text-xl font-semibold mb-2">Day 5 - Amboseli- Mombasa</h2>
+                <p class="text-gray-600 truncate-lines" id="post-content-5">
+                   Early Morning breakfast game en route drive out of Amboseli and head to Mombasa
+                </p>
+                <button id="read-more-btn-5" onclick="toggleReadMore(5)" class="text-blue-500 mt-4 inline-block">Read more</button>
+                <p class="text-gray-600 hidden" id="full-content-5">
+                    Lunch at Voi lion hill Camp after lunch proceed to your coastal hotel arriving in the hotel 
+            </div>
+           
+        </div>
+    </div>
+    <section class="py-10 px-4 flex justify-center mt-1">
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-green-400">Welcome to Jamii Tours and travels</h2>
+            <p class="mb-4">What is included i the package:</p>
+            <ul class="list-disc ml-6 mb-4">
+                <li class="mb-2">Transport during safari game drive using 4X4 landcruise Jeep.</li>
+                <li class="mb-2">Return flight from Nairobi to Maasai mara to Nairobi</li>
+                <li class="mb-2">Finest Accomodation</li>
+                <li class="mb-2">Three meals a day while on safari</li>
+                <li class="mb-2">Airport Pickups upon arrival in Nairobi</li>
+            </ul>
+            <p class="mb-4">However, please note that our package does not include:</p>
+            <ul class="list-disc ml-6">
+                <li class="mb-2">Cancelation of package once the tours starts.</li>
+                <li class="mb-2">Safe Guarantee of personal items like watches phones and laptops.</li>
+                <li class="mb-2">Visa issues.</li>
+                <li class="mb-2">Pre tour accomadtion request</li>
+                <li class="mb-2">Laundry</li>
+                <li class="mb-2">Drinks</li>
+
+            </ul>
+        </div>
+    </section>
+    <footer class="bg-gray-700 py-4">
+        <div class="flex items-center justify-center space-x-4">
+          <!-- Social Media Icons -->
+          <a href="https://www.facebook.com/profile.php?id=61550904733524&mibextid=ZbWKwL" class="text-gray-300 hover:text-gray-500 transition duration-300">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="text-gray-300 hover:text-gray-500 transition duration-300">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://instagram.com/jamii_tours?igshid=MzRlODBiNWFlZA==" class="text-gray-300 hover:text-gray-500 transition duration-300">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <!-- Add more social media icons here as needed -->
+      
+          <!-- Privacy Policy, Terms, Feed, and Disclaimer Links -->
+          <a href="./privacypolicy.html" class="text-gray-300 hover:text-gray-500 transition duration-300">Privacy Policy</a>
+          <a href="./disclaimer.html" class="text-gray-300 hover:text-gray-500 transition duration-300">Disclaimer</a>
+        </div>
+      </footer>
+</body>
+</html>

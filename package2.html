@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/jamiilogo.png" type="image/x-icon">
+    <title>9 Days From kenya's heart to Tanzania's soul</title>
+    <style>
+        .truncate-lines {
+            display: -webkit-box;
+            -webkit-line-clamp: 3; /* Number of lines to show before truncating */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+    <script>
+        function toggleReadMore(postId) {
+            const postContent = document.getElementById(`post-content-${postId}`);
+            const fullContent = document.getElementById(`full-content-${postId}`);
+            const readMoreBtn = document.getElementById(`read-more-btn-${postId}`);
+
+            if (postContent.classList.contains('hidden')) {
+                postContent.classList.remove('hidden');
+                fullContent.classList.add('hidden');
+                readMoreBtn.textContent = 'Read less';
+            } else {
+                postContent.classList.add('hidden');
+                fullContent.classList.remove('hidden');
+                readMoreBtn.textContent = 'Read more';
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 " style="background: url(./images/travel.jpg);">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto">
+            <h1 class="text-2xl font-semibold flex justify-center">9 Days From kenya's heart to Tanzania's soul</h1>
+            <p class="flex justify-center">Your detail plan and guidance ticket.</p>
+        </div>
+    </header>
+    
+    <div class="container mx-auto mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Blog Post 1 -->
+            <div class="bg-white p-6 rounded shadow">
+                <h2 class="text-xl font-semibold mb-2">Day 1 (arrival)</h2>
+                <p class="text-gray-600 truncate-lines" id="post-content-1">
+                   Arrival in Nairobi transportation of your items and luggage will be provided 
+                </p>
+                <button id="read-more-btn-1" onclick="toggleReadMore(1)" class="text-blue-500 mt-4 inline-block">Read more</button>
+                <p class="text-gray-600 hidden" id="full-content-1">
+                    You will driven through the city of Nairobi. Accomodation at New stanley Hotel
+                    All meals inclusive : Breakfast, Lunch, Dinner
+                </p>
+            </div>
+            
+            <!-- Blog Post 2 -->
+            <div class="bg-white p-6 rounded shadow">
+                <h2 class="text-xl font-semibold mb-2">Day 2 (Masai Mara)</h2>
+                <p class="text-gray-600 truncate-lines" id="post-content-2">
+                   5 to 6 hour drive to Masai Mara .First phase of game viewing 
+                </p>
+                <button id="read-more-btn-2" onclick="toggleReadMore(2)" class="text-blue-500 mt-4 inline-block">Read more</button>
+                <p class="text-gray-600 hidden" id="full-content-2">
+                    Enjoy lunch while you travel price inclusive .Head of for the second phase of game drive viewing on a exciting game viewing adventure. A profesional tour guide will be provided.
+                </p>
+            </div>
+
+            <div class="bg-white p-6 rounded shadow">
+                <h2 class="text-xl font-semibold mb-2">Day 3</h2>
+                <p class="text-gray-600 truncate-lines" id="post-content-3">
+                    Morning breakfast provided an exclusive track of relaxing and morning medidation
+                </p>
+                <button id="read-more-btn-3" onclick="toggleReadMore(3)" class="text-blue-500 mt-4 inline-block">Read more</button>
+                <p class="text-gray-600 hidden" id="full-content-3">
+                    Afternoon game viewing drive at Maasai Mara you can find array of birds of 450 different species or you decide to look for the big 5 
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <h2 class="text-xl font-semibold mb-2">Day 4</h2>
+                <p class="text-gray-600 truncate-lines" id="post-content-4">
+                    Wake up to beautiful scenaries of exotic wildlife alongside experienced tour guide for the day's first game drive
+                </p>
+                <button id="read-more-btn-4" onclick="toggleReadMore(4)" class="text-blue-500 mt-4 inline-block">Read more</button>
+                <p class="text-gray-600 hidden" id="full-content-4">
+                 Afternoon game drive watching the beautiful horizon of Maasai Mara  later move to the lodge for evening meditation at Mara kimani camp.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <h2 class="text-xl font-semibold mb-2">Day 5 - Serengeti</h2>
+                <p class="text-gray-600 truncate-lines" id="post-content-5">
+                   Fuly served on board breakfast. Depart for Serengenti /Sirare border 
+                </p>
+                <button id="read-more-btn-5" onclick="toggleReadMore(5)" class="text-blue-500 mt-4 inline-block">Read more</button>
+                <p class="text-gray-600 hidden" id="full-content-5">
+                    Around 8 hour drive through the rough road Serengeti being the largest and most visited reverse in the world we have a lot of wildlife activities i.e wildbeast migration 
+                    Accomodation provided at Mbalageti Tented Camp 
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <h2 class="text-xl font-semibold mb-2">Day 6</h2>
+                <p class="text-gray-600 truncate-lines" id="post-content-6">
+                  African adventure exploration begins with an explanatory game drive 
+                </p>
+                <button id="read-more-btn-6" onclick="toggleReadMore(6)" class="text-blue-500 mt-4 inline-block">Read more</button>
+                <p class="text-gray-600 hidden" id="full-content-6">
+                    Spend most of day exploring  the park best spots for taking pictures and experience the famous wildbeast migration a day you will live to dream about
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <h2 class="text-xl font-semibold mb-2">Day 7 Ngorongoro</h2>
+                <p class="text-gray-600 truncate-lines" id="post-content-7">
+                    Tale of an African journey starts in the morning after a fully served breakfast 
+                </p>
+                <button id="read-more-btn-7" onclick="toggleReadMore(7)" class="text-blue-500 mt-4 inline-block">Read more</button>
+                <p class="text-gray-600 hidden" id="full-content-7">
+                   Game drive through the park with spectacular stops  at famous places like the olduvai george
+                   lunch inclusive as take look at breathtaking scenary of Ngorongoro
+                   Accomodation provided at Rhino Lodge
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <h2 class="text-xl font-semibold mb-2">Day 8 Ngorongoro - Tarangire</h2>
+                <p class="text-gray-600 truncate-lines" id="post-content-8">
+                   Early morning breakfast to one the most highly ranked parks in Tanzania
+                </p>
+                <button id="read-more-btn-8" onclick="toggleReadMore(8)" class="text-blue-500 mt-4 inline-block">Read more</button>
+                <p class="text-gray-600 hidden" id="full-content-8">
+                  Just 2 hours from drive away from Arusha it lies  south east of ake manyara
+                  Enjoy full day game viewing at Tarangire creating beautiful moments and memories
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <h2 class="text-xl font-semibold mb-2">Day 9 Tarangire - Arusha - Nairobi </h2>
+                <p class="text-gray-600 truncate-lines" id="post-content-9">
+                    Sorry to see you leave us
+                </p>
+                <button id="read-more-btn-9" onclick="toggleReadMore(9)" class="text-blue-500 mt-4 inline-block">Read more</button>
+                <p class="text-gray-600 hidden" id="full-content-9">
+                    Depart for Nairobi via Arusha after breakfast stop-over for lunch is provided Accomodation is not provided
+                 </p>
+            </div>
+        </div>
+    </div>
+    <section class="py-10 px-4 flex justify-center mt-1">
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-green-400">Welcome to Jamii Tours and travels</h2>
+            <p class="mb-4">What is included i the package:</p>
+            <ul class="list-disc ml-6 mb-4">
+                <li class="mb-2">Transport during safari game drive using 4X4 landcruise Jeep.</li>
+                <li class="mb-2">Return flight from Nairobi to Maasai mara to Nairobi</li>
+                <li class="mb-2">Finest Accomodation</li>
+                <li class="mb-2">Three meals a day while on safari</li>
+                <li class="mb-2">Airport Pickups upon arrival in Nairobi</li>
+            </ul>
+            <p class="mb-4">However, please note that our package does not include:</p>
+            <ul class="list-disc ml-6">
+                <li class="mb-2">Cancelation of package once the tours starts.</li>
+                <li class="mb-2">Safe Guarantee of personal items like watches phones and laptops.</li>
+                <li class="mb-2">Visa issues.</li>
+                <li class="mb-2">Pre tour accomadtion request</li>
+                <li class="mb-2">Hot air ballon safaris</li>
+                <li class="mb-2">Maasai Village visit</li>
+
+            </ul>
+        </div>
+    </section>
+    <footer class="bg-gray-700 py-4">
+        <div class="flex items-center justify-center space-x-4">
+          <!-- Social Media Icons -->
+          <a href="https://www.facebook.com/profile.php?id=61550904733524&mibextid=ZbWKwL" class="text-gray-300 hover:text-gray-500 transition duration-300">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="text-gray-300 hover:text-gray-500 transition duration-300">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://instagram.com/jamii_tours?igshid=MzRlODBiNWFlZA==" class="text-gray-300 hover:text-gray-500 transition duration-300">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <!-- Add more social media icons here as needed -->
+      
+          <!-- Privacy Policy, Terms, Feed, and Disclaimer Links -->
+          <a href="./privacypolicy.html" class="text-gray-300 hover:text-gray-500 transition duration-300">Privacy Policy</a>
+          <a href="./disclaimer.html" class="text-gray-300 hover:text-gray-500 transition duration-300">Disclaimer</a>
+        </div>
+      </footer>
+</body>
+</html>

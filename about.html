@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+        }
+    </style>
+    <title>About Us Jamii Tours and Travels</title>
+    <link rel="shortcut icon" href="./images/jamiilogo.png" type="image/x-icon">
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-blue-500 text-white py-4">
+        <div class="container mx-auto flex justify-center items-center">
+            <!-- Hamburger Menu Button -->
+            <button id="menu-toggle" class="lg:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <nav id="dropdown-menu" class="hidden absolute top-16 right-0 mt-2 bg-white text-gray-700 rounded-lg shadow-lg w-40">
+                <ul class="py-2">
+                    <li><a href="./bookings.html" class="block px-4 py-2 hover:bg-gray-100">Home</a></li>
+                    <li><a href="./bookings.html#packages1" class="block px-4 py-2 hover:bg-gray-100">packages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-extrabold mb-4 flex justify-center">About Us</h1>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="flex items-center">
+                    <div class="rounded-full bg-white p-3">
+                        <i class="fas fa-globe text-blue-500 text-2xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h2 class="text-xl font-semibold">Global Travel</h2>
+                        <p class="text-gray-300 mt-2">Embark on a journey of a lifetime with our global travel experiences. From the sun-kissed beaches of Bali to the enchanting streets of Paris, we curate exceptional itineraries that allow you to explore the world's most fascinating destinations in style.</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="rounded-full bg-white p-3">
+                        <i class="fas fa-compass text-blue-500 text-2xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h2 class="text-xl font-semibold">Guided Tours</h2>
+                        <p class="text-gray-300 mt-2">Our experienced guides are passionate about sharing their in-depth knowledge and local insights, ensuring that your journey is not only educational but also unforgettable. Whether you're a history enthusiast, a foodie, or an adventure seeker, our guided tours cater to all interests and preferences.</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="rounded-full bg-white p-3">
+                        <i class="fas fa-suitcase-rolling text-blue-500 text-2xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h2 class="text-xl font-semibold">Tailored Packages</h2>
+                        <p class="text-gray-300 mt-2">At Jamii, we understand that every traveler is unique. That's why we offer tailored travel packages that match your specific interests, preferences, and budget. Whether you're planning a romantic getaway, a family adventure, or a solo expedition, we'll design a package that meets all your travel aspirations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-extrabold mb-6 flex justify-center">Jamii exclusive </h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="relative">
+                    <div class="absolute top-0 left-0 right-0 bottom-0 opacity-75 bg-cover bg-center" style="background-image: url('./images/travel.jpg');"></div>
+                    <div class="relative p-6 bg-white rounded-lg shadow-md">
+                        <h2 class="text-xl font-semibold mb-2 text-blue-500">We know Africa </h2>
+                        <p class="text-gray-700">Embark on a journey to the most stunning and exotic locations around Africa. Discover the beauty of nature, culture, and adventure .</p>
+                        <a href="#" class="text-blue-500 mt-4 hover:underline">Learn More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute top-0 left-0 right-0 bottom-0 opacity-75 bg-cover bg-center" style="background-image: url('path-to-your-image.jpg');"></div>
+                    <div class="relative p-6 bg-white rounded-lg shadow-md">
+                        <h2 class="text-xl font-semibold mb-2 text-green-600">Unforgettable Experiences</h2>
+                        <p class="text-gray-700">Create memories that last a lifetime with our curated travel experiences. From thrilling adventures to serene retreats, we offer it all.</p>
+                        <a href="./bookings.html#packages1 " class="text-blue-500 mt-4 hover:underline">Explore Experiences <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+  <footer class="bg-gray-700 py-4">
+    <div class="flex items-center justify-center space-x-4">
+      <!-- Social Media Icons -->
+      <a href="https://www.facebook.com/profile.php?id=61550904733524&mibextid=ZbWKwL" class="text-gray-300 hover:text-gray-500 transition duration-300">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="text-gray-300 hover:text-gray-500 transition duration-300">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://instagram.com/jamii_tours?igshid=MzRlODBiNWFlZA==" class="text-gray-300 hover:text-gray-500 transition duration-300">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <!-- Add more social media icons here as needed -->
+  
+      <!-- Privacy Policy, Terms, Feed, and Disclaimer Links -->
+      <a href="./privacypolicy.html" class="text-gray-300 hover:text-gray-500 transition duration-300">Policy</a>
+      <a href="./disclaimer.html" class="text-gray-300 hover:text-gray-500 transition duration-300">Disclaimer</a>
+      <!-- Made with Portfolio Link -->
+    <a href="https://agayawebdev.web.app/" class="text-gray-300 hover:text-gray-500 transition duration-300">This website is made by Agaya</a>
+    <a href="https://www.instagram.com/jdmnation_007/" class="text-gray-300 hover:text-gray-500 transition duration-300">Maintained by Honest</a>
+
+    <!-- Contact Link -->
+    <a href="./contact.html" class="text-gray-300 hover:text-gray-500 transition duration-300">Contact us</a>
+    </div>
+  </footer>
+  <script>
+    // JavaScript to toggle the mobile menu
+    const menuToggle = document.getElementById('menu-toggle');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+
+    menuToggle.addEventListener('click', () => {
+        dropdownMenu.classList.toggle('hidden');
+    });
+</script>
+</body>
+</html>

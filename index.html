@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tours and Travel</title>
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="./images/jamiilogo.png" type="image/x-icon">
+  <style>
+    .pictorial-section {
+      /* Center the section */
+      display: flex;
+      justify-content: center;
+    }
+
+    .pictorial-card {
+      border: 1px solid #ddd;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .pictorial-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .pictorial-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .pictorial-caption {
+      padding: 1rem;
+    }
+
+    /* Custom CSS for Packages Section */
+    .packages-section {
+      /* Center the section */
+      display: flex;
+      justify-content: center;
+    }
+
+    .package-card {
+      border: 1px solid #ddd;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .package-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .package-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .package-details {
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <!-- Navbar -->
+          <div class="bg-blue-400 flex justify-between fixed top-0 left-0 w-full p-2 z-10 ">
+            <img src="./images/TRAVEL_AND_TOURS-removebg-preview.png" alt="Logo"  width="150px" height="10px">
+            <!-- Hamburger Menu Icon for smaller devices -->
+            <div class="block sm:hidden">
+                <button id="navbar-toggle" class="text-white focus:outline-none">
+                    <span class="w-4 h-1 bg-white block mb-1 rounded-2xl"></span>
+                    <span class="w-4 h-1 bg-white block mb-1 rounded-2xl"></span>
+                    <span class="w-4 h-1 bg-white block rounded-2xl"></span>
+                </button>
+            </div>
+            <!-- Navbar items for larger devices -->
+                <div class="hidden sm:flex space-x-4 xl\:font-sans  mb-3">
+                <a href="./bookings.html" class="bg-white text-blue-500 hover:bg-blue-200 px-4 py-2 rounded-full w-full mt-4">Home</a>
+                 <a href="./about.html" class="bg-white text-blue-500 hover:bg-blue-200 px-4 py-2 rounded-full w-full mt-4">About</a>
+                 <a href="#packages1" class="bg-white text-blue-500 hover:bg-blue-200 px-4 py-2 rounded-full w-full mt-4">Packages</a>
+                 <button class="bg-white text-blue-500 hover:bg-blue-200 px-4 py-2 rounded-full w-full mt-4"id="whatsapp-button">Book</button>
+                </div>
+          </div>
+
+    <!-- Mobile menu (hidden by default) -->
+    <div id="mobile-menu" class="hidden sm:hidden bg-blue-500 mt-20">
+        <a href="./bookings.html" class="block py-3 px-4 text-white">Home</a>
+        <a href="./about.html" class="block py-3 px-4 text-white">About</a>
+        <a href="#packages1"class="block py-3 px-4 text-white">Packages</a>
+        <button class="bg-white text-blue-500 hover:bg-blue-100 px-4 py-2 rounded-full w-full mt-4" id="whatsapp-button">Book</button>
+    </div>
+
+
+
+  <!-- Large Homepage Picture with Random Text -->
+  <div class="relative h-96 bg-blue-700 text-white flex items-center justify-center">
+    <img src="./images/travel.jpg" alt="Large Homepage Picture" class="w-full h-full object-cover opacity-75 absolute">
+    <div class="z-10 text-center">
+      <h1 class="text-5xl font-bold mb-4">Discover Good vibes with Jamii </h1>
+      <p class="text-xl">Explore the beauty of exotic destinations with our exclusive tour packages.</p>
+    </div>
+  </div>
+  <!--companies section-->
+  <div class="bg-gray-600 py-8">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-4 flex justify-center">We proudly patnered with</h2>
+      <div class="flex flex-wrap items-center justify-center">
+        <!-- Company Logo 1 -->
+        <div class="p-4">
+          <img src="./images/Madison-Insurance-Company-Kenya-removebg-preview.png" alt="Company 1" class="h-16 hover:opacity-75 transition-opacity">
+        </div>
+  
+        <!-- Company Logo 2 -->
+        <div class="p-4">
+          <img src="./images/girrafe center.png" alt="Company 2" class="h-16 hover:opacity-75 transition-opacity">
+        </div>
+  
+        <!-- Company Logo 3 -->
+        <div class="p-4">
+          <img src="./images/kws.png" alt="Company 3" class="h-16 hover:opacity-75 transition-opacity">
+        </div>
+
+        <div class="p-4">
+            <img src="./images/tembea-removebg-preview.png" alt="Company 3" class="h-16 hover:opacity-75 transition-opacity">
+          </div>
+
+         <div class="p-4">
+            <img src="./images/serengeti-logo.png" alt="Company 3" class="h-16 hover:opacity-75 transition-opacity">
+          </div>
+  
+  
+        <!-- Add more company logos here -->
+  
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Main Content -->
+  <div class="container mx-auto mt-8">
+    <!-- About Section -->
+    <section id="about" class="container mx-auto px-4">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold  flex justify-center font-sans mt-0 text-blue-500">About Us</h2>
+        <p class=" text-gray-500">Jamii tours is a leading tourism company that specializes in crafting unforgettable travel experience with deep commitment to providing exceptional services and a passion for exploration.We curate journeys that immerse travelers in the beauty, culture , and wonders of destinatons worldwide.</p>
+      </div>
+    </section>
+<!-- Packages section -->
+<section id="packages1" class="py-16 bg-gray-100 pictorial-section">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold mb-4 flex justify-center text-blue-500">Packages we offer</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+      <!-- Pictorial Card 1 -->
+      <div class="pictorial-card">
+        <img src="./images/samburu.jpg" alt="Pictorial Image 1" class="pictorial-image">
+        <div class="pictorial-caption">
+          <h3 class="text-xl font-bold mb-2 flex justify-center text-blue-500">9 Days Samburu-Masai Mara-Nakuru-Nairobi Air safari.</h3>
+          <p class="text-gray-700">"Discover Rwanda's captivating wildlife and embark on a thrilling safari adventure amidst stunning landscapes."</p>
+        </div>
+        <a href="./package1.html" class="flex justify-center text-green-600 font-sans">CLICK THE LINK FOR MORE INFORMATION</a>
+      </div>
+
+      <!-- Pictorial Card 2 -->
+      <div class="pictorial-card">
+        <img src="./images/tanzania.jpg" alt="Pictorial Image 2" class="pictorial-image">
+        <div class="pictorial-caption">
+          <h3 class="text-xl font-bold mb-2 flex justify-center text-blue-500">9 Days From Kenya's heart to Tanzania's soul</h3>
+          <p class="text-gray-700">"Zanzibar's pristine beaches offer a slice of paradise, with turquoise waters, powdery sands, and unforgettable sunsets."</p>
+        </div>
+        <a href="./package2.html" class="flex justify-center text-green-600 font-sans">CLICK THE LINK FOR MORE INFORMATION</a>
+      </div>
+
+      <!-- Pictorial Card 3 -->
+      <div class="pictorial-card">
+        <img src="./images/nairobi.jpg" alt="Pictorial Image 3" class="pictorial-image">
+        <div class="pictorial-caption">
+          <h3 class="text-xl font-bold mb-2 flex justify-center text-blue-500">The Kenyan Kaleidoscope Safari</h3>
+          <p class="text-gray-700">"Zanzibar's pristine beaches offer a slice of paradise, with turquoise waters, powdery sands, and unforgettable sunsets."</p>
+        </div>
+        <a href="./package3.html" class="flex justify-center text-green-600 font-sans">CLICK THE LINK FOR MORE INFORMATION</a>
+      </div>
+
+      <!-- Pictorial Card 4 -->
+      <div class="pictorial-card">
+        <img src="./images/amboseli.jpg" alt="Pictorial Image 4" class="pictorial-image">
+        <div class="pictorial-caption">
+          <h3 class="text-xl font-bold mb-2 flex justify-center text-blue-500">5 days 5 nights Maasai Mara - Lake Nakuru - Amboseli Safari package</h3>
+          <p class="text-gray-700">"Zanzibar's pristine beaches offer a slice of paradise, with turquoise waters, powdery sands, and unforgettable sunsets."</p>
+        </div>
+        <a href="./package4.html" class="flex justify-center text-green-600 font-sans">CLICK THE LINK FOR MORE INFORMATION</a>
+      </div>
+
+      <!-- Pictorial Card 5 -->
+      <div class="pictorial-card">
+        <img src="./images/safari.jpg" alt="Pictorial Image 5" class="pictorial-image">
+        <div class="pictorial-caption">
+          <h3 class="text-xl font-bold mb-2 flex justify-center text-blue-500">8 Days of incredible Kenya Safari</h3>
+          <p class="text-gray-700">Zanzibar's pristine beaches offer a slice of paradise, with turquoise waters, powdery sands, and unforgettable sunsets</p>
+        </div>
+        <a href="./package5.html" class="flex justify-center text-green-600 font-sans">CLICK THE LINK FOR MORE INFORMATION</a>
+      </div>
+
+      <!-- Pictorial Card 6 -->
+      <div class="pictorial-card">
+        <img src="./images/package4.png" alt="Pictorial Image 6" class="pictorial-image">
+        <div class="pictorial-caption">
+          <h3 class="text-xl font-bold mb-2 flex justify-center text-blue-500">Seychelles ---Coming soon!</h3>
+          <p class="text-gray-700">Indulge in Seychelles' Tropical Bliss: Where Pristine Beaches, Crystal Clear Waters, and Exotic Charm Await Your Arrival.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="py-2 px-4 mt-0">
+      <div class="max-w-4xl mx-auto text-gray-500  p-6">
+          <h2 class="text-2xl font-semibold mb-4 flex justify-center">Jamii Policy</h2>
+          <p class="mb-4 flex justify-center">Joining our travel program comes with several benefits:</p>
+          <ul class="list-disc ml-6 mb-4">
+              <li class="mb-2 flex justify-center">Access to exclusive and executive resources.</li>
+              <li class="mb-2 flex justify-center">Discounts on selected products and services.</li>
+              <li class="mb-2 flex justify-center">Priority customer support.</li>
+          </ul>
+      </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-700 py-4">
+    <div class="flex items-center justify-center space-x-4">
+      <!-- Social Media Icons -->
+      <a href="
+      https://www.facebook.com/profile.php?id=61550904733524&mibextid=ZbWKwL" class="text-gray-300 hover:text-gray-500 transition duration-300">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="text-gray-300 hover:text-gray-500 transition duration-300">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://instagram.com/jamii_tours?igshid=MzRlODBiNWFlZA==" class="text-gray-300 hover:text-gray-500 transition duration-300">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <!-- Add more social media icons here as needed -->
+  
+      <!-- Privacy Policy, Terms, Feed, and Disclaimer Links -->
+      <a href="./privacypolicy.html" class="text-gray-300 hover:text-gray-500 transition duration-300">Privacy Policy</a>
+      <a href="./disclaimer.html" class="text-gray-300 hover:text-gray-500 transition duration-300">Disclaimer</a>
+      <!-- Made with Portfolio Link -->
+    <a href="https://mastersdigitalmarketing.org/" class="text-gray-300 hover:text-gray-500 transition duration-300">Made & Managed by Masters Digital Marketing</a>
+
+
+    <!-- Contact Link -->
+    <a href="./contact.html" class="text-gray-300 hover:text-gray-500 transition duration-300">Contact us </a>
+    </div>
+  </footer>
+  
+
+  <!-- Your custom JavaScript -->
+  <script>
+    document.getElementById('navbar-toggle').addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  document.getElementById('whatsapp-button').addEventListener('click', function() {
+    // Define your custom message
+    var customMessage = encodeURIComponent('Hello! I found your services on your website iam interested.');
+
+    // Replace '1234567890' with the recipient's phone number, including the country code.
+    // For example, for a US number: '1' + '1234567890'
+    var phoneNumber = '+254757833274';
+
+    // Create the WhatsApp link
+    var whatsappLink = 'https://wa.me/' + phoneNumber + '?text=' + customMessage;
+
+    // Open WhatsApp in a new tab or window
+    window.open(whatsappLink);
+  });
+</script>
+<script type="text/javascript">function add_chatinline(){var hccid=42230709;var nt=document.createElement("script");nt.async=true;nt.src="https://www.mylivechat.com/chatinline.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);}
+  add_chatinline();</script>
+</body>
+</html>

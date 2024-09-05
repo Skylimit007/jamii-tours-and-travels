@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/jamiilogo.png" type="image/x-icon">
+</head>
+<body class="bg-gray-100">
+    <div class="flex flex-col min-h-screen">
+        <header>
+            <!-- Header content goes here if needed -->
+        </header>
+        <main class="flex-grow">
+            <div class="bg-white shadow-md rounded w-1/2 p-6 mx-auto mt-12">
+                <h1 class="text-3xl font-semibold mb-6 flex justify-center text-blue-500">Jamii tours and travel</h1>
+                <form  method="post" action="send_email.php">
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="inquiry">What do you want to inquire?</label>
+                        <select id="inquiry" name="inquiry" class="w-full border rounded px-3 py-2">
+                            <option value="">Select an option</option>
+                            <option value="Package 1">9 Days Samburu package</option>
+                            <option value="Package 2">9 Days From Kenya package</option>
+                            <option value="Package 3">The Kenyan Kaleidoscope Safari</option>
+                            <option value="Package 4">5 days 5 nights Maasai Mara</option>
+                            <option value="Package 5">8 Days of incredible Kenya Safari</option>
+                            <option value="Package 6">Seychelles (coming soon)</option>
+                        </select>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
+                        <textarea id="message" name="message" class="resize-none w-full border rounded px-3 py-2" rows="4" placeholder="Type your message here"></textarea>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email Address</label>
+                        <input id="email" name="email" type="email" class="w-full border rounded px-3 py-2" placeholder="you@example.com">
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer class="bg-gray-700 py-4">
+            <div class="flex items-center justify-center space-x-4">
+                <!-- Social Media Icons -->
+                <!-- Add your social media icons here -->
+    
+                <!-- Privacy Policy, Terms, Feed, and Disclaimer Links -->
+                <a href="./privacypolicy.html" class="text-gray-300 hover:text-gray-500 transition duration-300">Privacy Policy</a>
+                <a href="./disclaimer.html" class="text-gray-300 hover:text-gray-500 transition duration-300">Disclaimer</a>
+    
+                <!-- Made with Portfolio Link -->
+                <a href="https://agayawebdev.web.app/" class="text-gray-300 hover:text-gray-500 transition duration-300">Made with Agaya</a>
+                <a href="https://www.instagram.com/jdmnation_007/" class="text-gray-300 hover:text-gray-500 transition duration-300">Maintained by Honest</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
